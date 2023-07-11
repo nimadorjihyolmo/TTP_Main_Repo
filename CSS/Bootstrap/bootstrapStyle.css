@@ -1,0 +1,15 @@
+/* .table-dark{
+    background-color: crimson;
+    color: crimson;
+} */
+.container{
+    background-color: red;
+}
+.container .row{
+    margin-top: 200px;
+}
+
+.col{
+    background-color: blue;
+    color:white;
+}

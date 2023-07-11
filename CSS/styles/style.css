@@ -1,0 +1,263 @@
+/* p {
+    color:red;
+} */
+
+/* 
+h1{
+    font-style: italic;
+    font-size: 70px;
+}
+
+.movies{ /* .movies access the class that we created in html*/
+    /*color:rgb(99, 19, 226);
+}
+
+.shows-title{
+    color:pink;
+} */
+
+/* #recipe-title{ /*#recipe-title access the id that we created in html*/
+    /*text-transform: uppercase;
+}
+
+#desserts{
+    text-align: center;
+} */
+
+/* *{   /* * access the main tag that we created in html*/
+   /* text-align: center;
+    font-family: monospace;
+}
+
+li{
+    color:rgb(44, 65, 255)
+}
+
+.languages{
+    text-transform: uppercase;
+} */
+
+/* h1{
+    /* pixels are absolute*/
+    /*font-size: 48px;*/
+
+    /*rem - adjustable to browser changes*/
+    /* 1 rem = 16px(default browser size;
+    2 rem = 32px;
+    3 rem = 64px;
+    */
+    /*font-size: 3rem;
+} */
+
+/**{
+    margin:0;
+    padding:0;
+    /*this property changes the box model behavior to border-box, this means that the width and height of an element include the content, padding, and border, but excludes the margin*/
+    /*box-sizing: border-box; 
+}*/
+
+/* .container{
+    border: 4px solid green;
+    border-right: 4px dotted red;
+    border-bottom: 4px solid purple;
+
+    font-size: 1.5rem;
+    padding: 10px;
+    margin: 20px; /*space outside the border*/
+
+/*}*/ 
+
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 2 rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+main{
+    text-decoration: underline;
+    text-transform: uppercase;
+    text-align: right;
+    text-indent: 40px;
+    line-height: 1.5;
+    letter-spacing: .4;
+    word-spacing: .8em;
+    font-weight: 600;
+    font-style: italic;
+} */
+
+/* LINKS PROPERTY*/
+/* body{
+    font-size: 2 rem;
+    font-family: monospace;
+}
+a{
+    text-decoration: none;
+    cursor: crosshair;
+    color: red;
+}
+
+a:visited{
+    color:blue;
+}
+
+/*can be used in any elements*/
+/* a:hover{
+    color: green;
+} */
+
+/*used for a elements*/
+/* a:active{
+    color: yellow;
+} */ 
+
+/*LISTS*/
+
+/* body{
+    padding: 5%;
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+ol{
+    list-style-type: upper-roman;
+}
+
+ul{
+    list-style-type: square;
+    text-align: center;
+    list-style-position: inside;
+    color: red; */
+    /* list-style-image: url("/HTML/Images/cat\ paw.png"); */
+/* }
+
+ul li{ /*only syles the list inside unordered list (ul)*/
+    /* color: green
+} */ 
+
+/* ul li:nth-child(2){ /*selects the specific list */
+    /* color:blue;
+} */ 
+
+/* ul ::marker{
+    color: purple;
+    font-family: fantasy;
+    font-size: 2rem;
+    content: "10% off "
+} */
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-size: 2rem;
+    font-family: monospace;
+}
+
+ul{
+    padding: 0.5rem;
+    text-align: center;
+    background-color: black;
+} */
+
+/* a{
+    text-decoration: none; /*removes the underline when hovering*/
+    /* color: white;
+} */ 
+
+/* a:hover{
+    color: blue;
+    background-color: green;
+} */
+
+/* li{
+    display: inline-block; /*displays list in single line*/
+
+
+    /*COLUMNS*/
+/* 
+    body{
+        font-size: 2rem;
+        font-family: monospace;
+    } */
+
+    /* .columns{
+        column-count: 4; /*making columns*/
+        /* column-width: 250px;
+        column-rule: 2px solid blue;
+        column-gap: 4rem; /*spaces between the column*/
+    /*}
+
+    /* .columns p{
+        margin-top: 0; /*margin on top of the paragraph*/
+    /*}
+     */
+    /* .columns .quote{
+        margin-top: 2 rem;
+        font-size: 3rem;
+        text-align: center;
+        column-span: all; /*takes whole column*/
+    /*}
+
+    /* .nowrap{
+        white-space: nowrap; /*when squeezing the size of browswer the whole line will go to next line*/
+    /*} 
+
+    /*POSITION*/
+
+    /* *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-size: 2rem;
+        font-family: monospace;
+    }
+
+    .outer-container{
+        border: 3px solid red;
+        width: 900px;
+        height: 500px;
+        margin: 90px;
+        position: relative;
+        
+        
+    }
+
+    .inner-container{
+        border: 3px solid blue;
+        width: 700px;
+        height: 200px;
+        margin: 100px; */
+        /* position: relative; */
+    /*}
+
+    .box{
+        width: 150px;
+        height: 150px;
+        color: green;
+        padding: 1rem;
+        
+    }
+
+    .absolute{
+        background-color: green;
+        position: absolute;
+        top: 300px;
+        right: 200px;
+    }
+
+
+
+
+
+ 

@@ -1,0 +1,238 @@
+
+main{
+  background-color:#206A85
+}
+
+
+.navbar ul{
+  
+  transform: translate(-50%, -50%);
+  position: relative;
+  left: 50%;
+  list-style: none;
+  background-color: #206A85;
+  text-align: center;
+  padding-top: 100px;
+  margin: 0;
+  
+}
+
+
+.navbar li{
+  
+  display: inline-block;
+  font-family: 'Righteous', cursive;
+}
+
+.navbar a{
+ 
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  width: 120px;
+  display: block;
+
+  font-size: 1.5rem;
+}
+
+.navbar a:hover{
+  cursor: pointer;
+}
+
+.navbar a:hover{
+  transform: scale(1.1);
+}
+
+li a:hover::after{
+  width: 100%;
+  transition: width 0.3s linear;
+}
+
+li a:hover{
+  color:lightblue;
+}
+
+  .container{
+    font-family: 'Righteous', cursive;
+    color: white;
+    align-items: center;
+    background-color: #206A85;
+    padding-bottom: 100px;
+    
+  }
+
+  .itemX{
+    flex: 1;
+    padding:20px;
+  }
+
+  .itemY{
+    flex: .75 0 300px;
+    padding: 20px;
+
+  }
+
+  .item1{
+  
+    text-align: center;
+    padding:30px;
+    font-size: 3rem;
+    text-transform: uppercase;
+    
+  }
+
+  .imageItem{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 20%;
+  
+  }
+
+  @media (min-width: 56.25em){
+    .container {
+        display: flex;  
+    }
+  }
+  
+  .item2{
+  
+    padding: 10px;
+   
+  }
+
+  #Birds{
+    font-family: 'Righteous', cursive;
+    background-color:white;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+  
+  
+
+  .bird{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+    margin-top: 100px;
+  }
+ 
+
+  .box{
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    margin:60px;
+  }
+
+  .intro{
+    height: 140px;
+    width: 300px;
+    padding: 18px;
+   
+  }
+
+  .box:hover{
+    cursor: pointer;
+  }
+
+  .box:hover img{
+    transform: scale(1.1);
+ 
+  }
+  #Animal{
+    background-color:#206A85;
+    font-family: 'Righteous', cursive;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    
+   
+  }
+  .animalClass{
+    padding-bottom: 70px;
+
+
+  }
+
+  .Animal{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+   
+  }
+  
+  .ani{
+    height: 420px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+    margin:60px;
+    
+  }
+  .wolf{
+    padding: 20px;
+  }
+
+  .ani:hover{
+    cursor: pointer;
+  }
+
+  .ani:hover img{
+    transform: scale(1.1);
+  }
+
+  #Bonus{
+    font-family: 'Righteous', cursive;
+    color: black;
+    background-color:white;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+
+  .bonusvideo{
+    margin-top: 150px;
+    box-shadow: 5px 5px 20px black;
+
+  }
+
+  .footer{
+    padding: 17;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #333333;
+    color: white;
+  }
+
+  .footer a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+  }
+
+  .line{
+    text-align: center;
+    position: relative;
+  }
+
+  .line::after{
+    content: " ";
+    position: absolute;
+    display: block;
+    left:48%;
+    bottom: -10px;
+    width: 4%;
+    height: 2px;
+    background-color: orangered;
+  }
+
+

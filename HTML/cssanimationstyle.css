@@ -1,0 +1,50 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.animation{
+    width:200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    background-color: purple;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    transition: width 2s, height 2s, background-color;
+}
+
+.animation:hover{
+    width: 300px;
+    height: 300px;
+    background-color: lightpink;
+}
+
+.keyframe-animation{
+    width:200px;
+    height: 200px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgb(19, 0, 128);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+    /*animation-delay: 2s; /*animation starts after 2 seconds*/
+}
+
+@keyframes spin{
+    from {
+        tranform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,19 @@
+body {
+    background-color: #f2f2f2; /* Set background color */
+    color: #333333; /* Set text color */
+}
+
+div {
+    margin-bottom: 20px; /* Add margin at the bottom of each div */
+    padding: 10px; /* Add padding within each div */
+    border: 1px solid #dddddd; /* Add border to each div */
+}
+
+h1 {
+    margin-top: 0; /* Remove margin from the top of h1 */
+}
+
+img {
+    display: block; /* Make the image a block element for spacing */
+    margin-bottom: 10px; /* Add margin at the bottom of each image */
+}

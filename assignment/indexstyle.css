@@ -1,0 +1,21 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    align-items: center;
+    background-color:rgb(245, 225, 199);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#personalinfo{
+    color: rgb(109, 69, 16);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.heading{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:chocolate;
+    text-decoration: underline;
+}
+img{
+    width: 200px;
+    border: 1px solid black;
+}
