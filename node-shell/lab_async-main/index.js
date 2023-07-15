@@ -14,6 +14,7 @@ const mostFrequentWord = (text) => {
 };
 
 const findPassword = async () => {
+  try{
   const poem1 = await readFile("poems/starting-poem.txt", "utf-8");
   const poem2FileName = `poems/${mostFrequentWord(poem1)}.txt`;
 
@@ -28,6 +29,10 @@ const findPassword = async () => {
   const password = mostFrequentWord(poem3);
 
   console.log(password); // password is love
+  } catch (error) {
+    console.log("Something went wrong when loading poem1:", error.stack);
+    return; // so we don't try to read the other files and cause more errors
+  }
 };
 
 findPassword();
