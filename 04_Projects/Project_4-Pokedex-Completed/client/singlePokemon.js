@@ -38,7 +38,6 @@ const SinglePokemon = () => {
       <p>Date Caught: {pokemon.date}</p>
       <img src={pokemon.image} alt={pokemon.name} style={{ width: '200px', height: '200px'}} />
 
-      {/* Render the TrainerDetails component with the trainer data */}
       <SingleTrainer trainer={trainer} />
      
     </div>

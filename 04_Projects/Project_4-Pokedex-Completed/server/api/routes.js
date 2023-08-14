@@ -4,7 +4,7 @@ const { Pokemon, Trainer } = require('../db/index');
 // Connect your API routes here!
 
 // Route to get all Pokemon
-router.get("/pokemon", async (req, res) => {
+router.get("/pokemon", async (req, res, next) => {
     try {
         const allPokemon = await Pokemon.findAll({ include: Trainer });
         res.json(allPokemon);
@@ -15,7 +15,7 @@ router.get("/pokemon", async (req, res) => {
 
 // Route to get a single pokemon (based on its id), inclduing the pokemon's trainer
 
-router.get('/pokemon/:id', async (req, res) => {
+router.get('/pokemon/:id', async (req, res, next) => {
     try {
         const onePokemon = await Pokemon.findByPk(req.params.id, { include: Trainer });
         if (onePokemon) {
@@ -29,7 +29,7 @@ router.get('/pokemon/:id', async (req, res) => {
 });
 
 // Route to add a new pokemon
-router.post('/pokemon', async (req, res) => {
+router.post('/pokemon', async (req, res, next) => {
     try {
         const addPokemon = await Pokemon.create(req.body);
         res.status(201).json(addPokemon);
@@ -39,7 +39,7 @@ router.post('/pokemon', async (req, res) => {
 });
 
 // Route to remove a pokemon (based on its id)
-router.delete('/pokemon/:id', async (req, res) => {
+router.delete('/pokemon/:id', async (req, res, next) => {
     try {
         const deletePokemon = await Pokemon.destroy({where: {id: req.params.id}});
         if(deletePokemon === 1){
@@ -54,7 +54,7 @@ router.delete('/pokemon/:id', async (req, res) => {
 });
 
 // Route to update an existing pokemon
-router.put('/pokemon/:id', async (req, res) => {
+router.put('/pokemon/:id', async (req, res, next) => {
     try {
       const [updatedRowsCount, updatedPokemon] = await Pokemon.update(req.body, {
         where: { id: req.params.id },
@@ -71,7 +71,7 @@ router.put('/pokemon/:id', async (req, res) => {
   });
 
   // Route to get all trainers
-  router.get("/trainers", async (req, res) => {
+  router.get("/trainers", async (req, res, next) => {
     try {
         const allTrainers = await Trainer.findAll({ include: Pokemon });
         res.json(allTrainers);
@@ -81,7 +81,7 @@ router.put('/pokemon/:id', async (req, res) => {
 });
 
 // Route to get a single trainer (based on their id), including that trainer's pokemon
-router.get('/trainers/:id', async (req, res) => {
+router.get('/trainers/:id', async (req, res, next) => {
     try {
         const oneTrainer = await Trainer.findByPk(req.params.id, { include: Pokemon });
         if (oneTrainer) {
@@ -95,7 +95,7 @@ router.get('/trainers/:id', async (req, res) => {
 });
 
 // Route to add a new trainer
-router.post('/trainers', async (req, res) => {
+router.post('/trainers', async (req, res,next) => {
     try {
         const addTrainer = await Trainer.create(req.body);
         res.status(201).json(addTrainer);
