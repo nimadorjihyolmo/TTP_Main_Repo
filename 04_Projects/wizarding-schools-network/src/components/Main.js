@@ -8,7 +8,7 @@ const Main = () => {
     <div className="main-container">
     <div className="background-image"></div>
     <div className="content-container">
-      <h1 className="main-title">Welcome <p /> to the <p /> Wizarding Schools <p />Network!</h1>
+      <h1 className="main-title">Welcome <p /> to the <p /> Wizarding Schools <p />Network!!!</h1>
     </div>
   </div>
   );
