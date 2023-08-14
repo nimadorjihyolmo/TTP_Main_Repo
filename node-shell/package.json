@@ -1,16 +1,20 @@
 {
-  "name": "npm",
+  "name": "express_package",
   "version": "1.0.0",
-  "description": "",
   "main": "bash.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "Nima Sherpa",
   "license": "ISC",
   "dependencies": {
     "curl": "^0.1.4",
+    "express": "^4.18.2",
     "nodemon": "^3.0.1",
-    "request": "^2.88.2"
-  }
+    "pg": "^8.11.1",
+    "request": "^2.88.2",
+    "sequelize": "^6.32.1"
+  },
+  "description": ""
 }

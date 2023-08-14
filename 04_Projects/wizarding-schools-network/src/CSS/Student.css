@@ -1,0 +1,43 @@
+.single-student {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .single-student h2 {
+    margin-bottom: 10px;
+    color: #752f1b;
+    font-size: 20px;
+  }
+
+  .single-student h3 {
+    margin-bottom: 10px;
+    color: #752f1b;
+  }
+  
+  .student-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #752f1b;
+  }
+  
+  .single-student p {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .school-link {
+    text-decoration: none;
+    color: #752f1b;
+    font-weight: bold;
+  }
+  
+  .student-update-form {
+    margin-top: 20px;
+  }
+  

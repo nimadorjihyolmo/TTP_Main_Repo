@@ -1,0 +1,77 @@
+
+.single-wizarding-school-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .school-name {
+    font-size: 24px;
+    color: #752f1b;
+    margin-bottom: 10px;
+  }
+  
+  .school-image {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+  }
+  
+  .school-location,
+  .school-description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .students-heading {
+    font-size: 20px;
+    color: #752f1b;
+    margin-bottom: 10px;
+  }
+  
+  .students-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .student-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  .student-link {
+    color: #007bff;
+    text-decoration: none;
+    margin-right: 10px;
+  }
+  
+  .unenroll-button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .no-students-message {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .update-form-container {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+  }
+  
+  .update-form-heading {
+    font-size: 20px;
+    color: #752f1b;
+    margin-bottom: 10px;
+  }
+  

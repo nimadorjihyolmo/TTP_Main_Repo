@@ -1,0 +1,83 @@
+.students-list {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.students-list-heading {
+  margin-bottom: 10px;
+  color: #752f1b;
+}
+
+.students-list-ul {
+  padding: 18px;
+  font-size: 17px;
+}
+
+
+.students-list-link {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.students-list-delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.students-list-delete-button:hover {
+  background-color: #c82333;
+}
+
+.students-list .new-student-form {
+  margin-top: 20px;
+}
+.students-list {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .students-list-heading {
+    margin-bottom: 10px;
+  }
+  
+  .students-list-ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .students-list-item {
+    margin-bottom: 10px;
+  }
+  
+  .students-list-link {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  .students-list-delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .students-list-delete-button:hover {
+    background-color: #c82333;
+  }
+  
+  .students-list .new-student-form {
+    margin-top: 20px;
+  }
+  

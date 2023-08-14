@@ -1,0 +1,38 @@
+.update-school-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .update-school-form h2 {
+    margin-bottom: 10px;
+  }
+  
+  .update-school-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .update-school-form input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+  
+  .update-school-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .update-school-form button:hover {
+    background-color: #0056b3;
+  }
+  

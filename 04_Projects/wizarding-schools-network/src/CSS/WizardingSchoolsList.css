@@ -1,0 +1,50 @@
+
+
+.wizarding-schools-list-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .wizarding-schools-list-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .school-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .school-item {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .school-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+  }
+  
+  .school-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .add-school-form-title {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #752f1b;
+  }
+  
