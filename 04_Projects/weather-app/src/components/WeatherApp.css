@@ -1,0 +1,50 @@
+.weather-app-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .weather-search-form {
+    margin-bottom: 20px;
+  }
+  
+  .weather-search-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .weather-search-form button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .weather-info {
+    margin-top: 20px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-info p {
+    font-size: 18px;
+  }
+  
+  .weather-forecast {
+    margin-top: 20px;
+  }
+  
+  .weather-forecast ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .weather-forecast li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  

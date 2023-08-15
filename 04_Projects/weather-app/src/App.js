@@ -1,14 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Routes, Route} from 'react-router-dom'; 
+import Navbar from './components/Navbar';
+import Home from './components/About';
+import WeatherApp from './components/WeatherApp';
 import './App.css';
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Weather App</h1>
-      </header>
+        <Navbar />
+          <Routes>
+              <Route path="/"  element={<Home />} />
+              <Route path="/weather" element={<WeatherApp />} />
+          </Routes>  
     </div>
   );
-}
+};
 
 export default App;
