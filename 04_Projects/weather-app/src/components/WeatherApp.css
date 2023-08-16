@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 .weather-app-container {
+  background: url('../image/weatherAppBg.jpg') no-repeat center center fixed;
+  background-size: cover;
     text-align: center;
     padding: 20px;
+    font-family: 'Caveat', cursive;
   }
   
   .weather-search-form {
@@ -9,7 +14,7 @@
   
   .weather-search-form input[type="text"] {
     padding: 8px;
-    border: 1px solid #ccc;
+    border: 1px solid #472e2e;
     border-radius: 4px;
   }
   
@@ -32,6 +37,7 @@
   
   .weather-info p {
     font-size: 18px;
+    font-family: 'Codystar', cursive;
   }
   
   .weather-forecast {
@@ -49,7 +55,6 @@
   .forecast-item {
     width: calc(25% - 10px); /* 4 items in a row with spacing */
     margin-bottom: 20px;
-    /* border: 1px solid #ccc; */
     padding: 10px;
   }
   

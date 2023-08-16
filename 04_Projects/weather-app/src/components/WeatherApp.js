@@ -33,16 +33,20 @@ const WeatherApp = () => {
 
   return (
     <div className="weather-app-container">
-      <h2>Weather App</h2>
+
+      {console.log(forecastData)};
+      <p><h2>Weather App</h2></p>
       <form className="weather-search-form" onSubmit={handleSearch}>
         <input type="text" name="city" placeholder="Enter city name" />
         <button type="submit">Search</button>
       </form>
       {weatherData && (
         <div className="weather-info">
+          <p></p>
           <p>Date: {new Date().toLocaleDateString()}</p>
           <p>Temperature: {Math.round((weatherData.main.temp - 273.15) * 9/5 + 32)}°F</p>
           <p>Weather: {weatherData.weather[0].description}</p>
+          
         </div>
       )}
       {forecastData.length > 0 && (
@@ -57,7 +61,9 @@ const WeatherApp = () => {
                 <p>Weather: {forecast.weather[0].description}</p>
               </div>
               <div className="forecast-image">
-                <img src="https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_7-512.png" alt="Weather" />
+                {/* <img src="https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_7-512.png" alt="Weather" /> */}
+
+                <img src={`https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`} alt={forecast.weather[0].icon}  />
               </div>
             </li>
           ))}

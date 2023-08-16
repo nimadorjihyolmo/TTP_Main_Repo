@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import lakeHillImage from '../image/lakeHill.jpg';
 
 const About = () => {
   return (
@@ -21,7 +22,7 @@ const About = () => {
           </div>
 
           <div className="col-md-6">
-            <img src="./image/lakeHill.jpg" alt="Scenic Lake Hill" className="img-fluid rounded" />
+            <img src={lakeHillImage} alt="Scenic Lake Hill" className="img-fluid rounded" />
           </div>
         </div>
         
