@@ -40,22 +40,29 @@ const WeatherApp = () => {
       </form>
       {weatherData && (
         <div className="weather-info">
-          <p>City: {weatherData.name}</p>
-          <p>Temperature: {Math.round(weatherData.main.temp - 273.15)}°C</p>
+          <p>Date: {new Date().toLocaleDateString()}</p>
+          <p>Temperature: {Math.round((weatherData.main.temp - 273.15) * 9/5 + 32)}°F</p>
           <p>Weather: {weatherData.weather[0].description}</p>
         </div>
       )}
       {forecastData.length > 0 && (
         <div className="weather-forecast">
-          <h3>Forecast for the Next Few Days</h3>
-          <ul>
-            {forecastData.slice(0, 4).map((forecast, index) => (
-              <li key={index}>
-                Date: {forecast.dt_txt}, Temperature: {Math.round(forecast.main.temp - 273.15)}°C, Weather: {forecast.weather[0].description}
-              </li>
-            ))}
-          </ul>
-        </div>
+        <h3>Forecast for the Next Few Days</h3>
+        <ul className="forecast-list">
+          {forecastData.slice(0, 4).map((forecast, index) => (
+            <li key={index} className="forecast-item">
+              <div className="forecast-details">
+                <p>{new Date(forecast.dt_txt).toLocaleDateString('en-US', { weekday: 'long' })}</p>
+                <p>Temperature: {Math.round((forecast.main.temp - 273.15) * 9/5 + 32)}°F</p>
+                <p>Weather: {forecast.weather[0].description}</p>
+              </div>
+              <div className="forecast-image">
+                <img src="https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_7-512.png" alt="Weather" />
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
       )}
     </div>
   );

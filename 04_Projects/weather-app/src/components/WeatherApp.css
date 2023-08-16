@@ -38,13 +38,32 @@
     margin-top: 20px;
   }
   
-  .weather-forecast ul {
+  .forecast-list {
     list-style: none;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
   }
   
-  .weather-forecast li {
-    margin-bottom: 10px;
-    font-size: 16px;
+  .forecast-item {
+    width: calc(25% - 10px); /* 4 items in a row with spacing */
+    margin-bottom: 20px;
+    /* border: 1px solid #ccc; */
+    padding: 10px;
   }
+  
+  .forecast-details {
+    font-size: 14px;
+  }
+  
+  .forecast-image {
+    text-align: center;
+  }
+  
+  .forecast-image img {
+    max-width: 100%;
+    height: auto;
+  }
+  
   
