@@ -5,10 +5,12 @@ import './Navbar.css';
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <ul>
-        <li><Link to="/">About</Link></li>
-        <li><Link to="/weather">Weather App</Link></li>
-      </ul>
+      <div className="navbar-content">
+        <ul>
+          <li><Link to="/">About</Link></li>
+          <li><Link to="/weather">WeatherApp</Link></li>
+        </ul>
+      </div>
     </nav>
   );
 };

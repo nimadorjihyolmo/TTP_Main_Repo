@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point&display=swap');
+
 .navbar {
-    background-color: #333;
+    background-color: #0f1529;
     color: #fff;
-  }
+    font-family: 'Sulphur Point', sans-serif;
+    font-size: 25px;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
   
   .navbar ul {
     list-style: none;
-    padding: 0;
+    padding: 0px;
     display: flex;
     justify-content: center;
   }
@@ -17,11 +28,10 @@
   .navbar a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
     transition: color 0.3s;
   }
   
   .navbar a:hover {
-    color: #f39c12;
+    color: #cf5300;
   }
   

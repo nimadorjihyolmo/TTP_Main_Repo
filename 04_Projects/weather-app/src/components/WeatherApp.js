@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './WeatherApp.css';
 import axios from 'axios';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faSearch } from '@fortawesome/free-solid-svg-icons';
+
 
 const WeatherApp = () => {
   const apiKey = '3ce209e69344c025839d816a93578603';
@@ -34,18 +37,27 @@ const WeatherApp = () => {
   return (
     <div className="weather-app-container">
 
-      {console.log(forecastData)};
+      {/* {console.log(weatherData)} */}
       <p><h2>Weather App</h2></p>
       <form className="weather-search-form" onSubmit={handleSearch}>
         <input type="text" name="city" placeholder="Enter city name" />
-        <button type="submit">Search</button>
+        <button type="submit">Search</button>  
+        {/* <FontAwesomeIcon icon={faSearch} /> */}
       </form>
+
+     
       {weatherData && (
+        
         <div className="weather-info">
-          <p></p>
-          <p>Date: {new Date().toLocaleDateString()}</p>
-          <p>Temperature: {Math.round((weatherData.main.temp - 273.15) * 9/5 + 32)}°F</p>
-          <p>Weather: {weatherData.weather[0].description}</p>
+           <div>
+              <p>Currently in </p> 
+              <p className = "currentLocation">{weatherData.name}</p>
+            </div>
+          <p>{new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}</p>
+         
+          <p>{Math.round((weatherData.main.temp - 273.15) * 9/5 + 32)}°F</p>
+          <p>RealFeel: {Math.round((weatherData.main.feels_like - 273.15) * 9/5 + 32)}°F</p>
+          <p>{weatherData.weather[0].description} <img src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`} alt={weatherData.weather[0].icon}/> </p>
           
         </div>
       )}
@@ -53,18 +65,20 @@ const WeatherApp = () => {
         <div className="weather-forecast">
         <h3>Forecast for the Next Few Days</h3>
         <ul className="forecast-list">
-          {forecastData.slice(0, 4).map((forecast, index) => (
+          {forecastData
+          .filter((forecast, index) => index % 8 === 0)
+          .slice(0, 4)
+          .map((forecast, index) => (
             <li key={index} className="forecast-item">
               <div className="forecast-details">
-                <p>{new Date(forecast.dt_txt).toLocaleDateString('en-US', { weekday: 'long' })}</p>
-                <p>Temperature: {Math.round((forecast.main.temp - 273.15) * 9/5 + 32)}°F</p>
-                <p>Weather: {forecast.weather[0].description}</p>
-              </div>
-              <div className="forecast-image">
-                {/* <img src="https://cdn4.iconfinder.com/data/icons/the-weather-is-nice-today/64/weather_7-512.png" alt="Weather" /> */}
-
+                <p>{new Date(forecast.dt_txt).toLocaleDateString('en-US', { weekday: 'long' })}</p> 
+                <p>{Math.round((forecast.main.temp - 273.15) * 9/5 + 32)}°F</p> {/* Temperature */}
+                <div className="forecast-image">
                 <img src={`https://openweathermap.org/img/wn/${forecast.weather[0].icon}.png`} alt={forecast.weather[0].icon}  />
+                </div>
+                <p> {forecast.weather[0].description}</p> {/* Weather */}
               </div>
+              
             </li>
           ))}
         </ul>
