@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './WeatherApp.css';
 import axios from 'axios';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import weatherAppBg from '../image/weatherAppBg.jpg';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 
 const WeatherApp = () => {
@@ -35,15 +37,17 @@ const WeatherApp = () => {
   };
 
   return (
+
     <div className="weather-app-container">
 
-      {/* {console.log(weatherData)} */}
-      <p><h2>Weather App</h2></p>
-      <form className="weather-search-form" onSubmit={handleSearch}>
-        <input type="text" name="city" placeholder="Enter city name" />
-        <button type="submit">Search</button>  
-        {/* <FontAwesomeIcon icon={faSearch} /> */}
-      </form>
+      <div className="content-wrapper">
+        <p><h2>The Only Weather Forecast You Need</h2></p>
+          <form className="weather-search-form" onSubmit={handleSearch}>
+            <input type="text" name="city" placeholder="Enter city name" />
+            <button type="submit"><FontAwesomeIcon icon={faSearch} /></button>   
+          
+        </form>
+      </div>
 
      
       {weatherData && (
@@ -54,11 +58,9 @@ const WeatherApp = () => {
               <p className = "currentLocation">{weatherData.name}</p>
             </div>
           <p>{new Date().toLocaleString('en-US', { timeZone: 'America/New_York' })}</p>
-         
           <p>{Math.round((weatherData.main.temp - 273.15) * 9/5 + 32)}°F</p>
           <p>RealFeel: {Math.round((weatherData.main.feels_like - 273.15) * 9/5 + 32)}°F</p>
           <p>{weatherData.weather[0].description} <img src={`https://openweathermap.org/img/wn/${weatherData.weather[0].icon}.png`} alt={weatherData.weather[0].icon}/> </p>
-          
         </div>
       )}
       {forecastData.length > 0 && (

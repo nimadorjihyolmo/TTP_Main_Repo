@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Import Link
+import { Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import lakeHillImage from '../image/lakeHill.jpg';
 import './About.css';
@@ -10,21 +10,25 @@ const About = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            <br /><h2 className="mb-4 about">About Weather App</h2>
+            <br /><h2 className="mb-4 about">About</h2>
             <br />
-            <p>Welcome to the Weather App, your go-to source for weather information!</p>
-            <p>This app allows you to check the current weather and forecast for various cities around the world. Simply enter the name of the city you're interested in, and the app will provide you with up-to-date weather data.</p>
+            <div className= "aboutDetail">
+              <p>Welcome to the Weather App, your go-to source for weather information!</p>
+              <p>This app allows you to check the current weather and forecast for various cities around the world. Simply enter the name of the city you're interested in, and the app will provide you with up-to-date weather data.</p>
+              </div>
             <br /><br />
 
             <div className="keyFeatures">
               <h4>Key Features</h4>
               <br />
-              <ul>
-                <li>Get real-time weather information for a specific city.</li>
-                <li>View the temperature, weather conditions, and more.</li>
-                <li>See the forecast for the next few days.</li>
-                <li>Easy-to-use interface with a simple search form.</li>
-              </ul>
+              <div className="keyFeaturesDetail">
+                <ul>
+                  <li>Get real-time weather information for a specific city.</li>
+                  <li>View the temperature, weather conditions, and more.</li>
+                  <li>See the forecast for the next few days.</li>
+                  <li>Easy-to-use interface with a simple search form.</li>
+                </ul>
+              </div>
             </div>
           </div>
 
@@ -36,7 +40,7 @@ const About = () => {
 
         <div className="row mt-4">
           <div className="col-md-12">
-            <p className="text-center">
+            <p className="text-center size">
               Whether you're planning a trip, curious about the weather, or just want to stay informed, the Weather App has you covered.
               Stay ahead of the weather with accurate and reliable data at your fingertips.
             </p>
