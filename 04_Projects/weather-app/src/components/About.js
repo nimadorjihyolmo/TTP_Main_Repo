@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import lakeHillImage from '../image/lakeHill.jpg';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './About.css';
 
 const About = () => {
